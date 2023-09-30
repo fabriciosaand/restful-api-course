@@ -1,0 +1,40 @@
+# Find all peoples
+GET http://localhost:8080/person
+Content-Type: application/json
+###
+
+# Find one person
+GET http://localhost:8080/person/5
+Content-Type: application/json
+###
+
+# Create person
+POST http://localhost:8080/person
+Content-Type: application/json
+
+{
+  "firstName": "Fabricio fsdf",
+  "lastName": "Andrade",
+  "address": "Av. Alphaville, Alphaville I, Salvador - Bahia",
+  "gender": "Male"
+}
+###
+
+# Update person
+PUT http://localhost:8080/person
+Content-Type: application/json
+
+{
+  "id": 4,
+  "firstName": "Fabricio 2",
+  "lastName": "Andrade 2 ",
+  "address": "Av. Alphaville, Alphaville I, Salvador - Bahia - BR",
+  "gender": "Male"
+}
+###
+
+# Delete person
+
+DELETE  http://localhost:8080/person/4
+Content-Type: application/json
+###
