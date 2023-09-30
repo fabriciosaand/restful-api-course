@@ -13,8 +13,8 @@ POST http://localhost:8080/person
 Content-Type: application/json
 
 {
-  "firstName": "Fabricio fsdf",
-  "lastName": "Andrade",
+  "first_name": "Fabricio",
+  "last_name": "Andrade",
   "address": "Av. Alphaville, Alphaville I, Salvador - Bahia",
   "gender": "Male"
 }
