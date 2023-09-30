@@ -4,7 +4,7 @@ Content-Type: application/json
 ###
 
 # Find one person
-GET http://localhost:8080/person/1 
+GET http://localhost:8080/person/5
 Content-Type: application/json
 ###
 
@@ -13,7 +13,7 @@ POST http://localhost:8080/person
 Content-Type: application/json
 
 {
-  "firstName": "Fabricio",
+  "firstName": "Fabricio fsdf",
   "lastName": "Andrade",
   "address": "Av. Alphaville, Alphaville I, Salvador - Bahia",
   "gender": "Male"
@@ -25,7 +25,7 @@ PUT http://localhost:8080/person
 Content-Type: application/json
 
 {
-  "id": 1,
+  "id": 4,
   "firstName": "Fabricio 2",
   "lastName": "Andrade 2 ",
   "address": "Av. Alphaville, Alphaville I, Salvador - Bahia - BR",
@@ -35,6 +35,6 @@ Content-Type: application/json
 
 # Delete person
 
-DELETE  http://localhost:8080/person/1
+DELETE  http://localhost:8080/person/4
 Content-Type: application/json
 ###
