@@ -1,19 +1,31 @@
 package com.fabriciosaand.cursorestfulapis.model;
 
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+
+@Entity
+@Table(name = "person")
 public class Person {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private String firstName;
-    private String lastName;
-    private String address;
-    private String gender;
 
-    public Person(String firstName, String lastName, String address, String gender) {
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.address = address;
-        this.gender = gender;
-    }
+    @Column(name = "first_name", nullable = false, length = 80)
+    private String firstName;
+
+    @Column(name = "last_name", nullable = false, length = 80)
+    private String lastName;
+
+    @Column(nullable = false, length = 100)
+    private String address;
+
+    @Column(nullable = false, length = 6)
+    private String gender;
 
     public Person() {
     }

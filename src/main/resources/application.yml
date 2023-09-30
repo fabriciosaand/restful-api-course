@@ -1,0 +1,20 @@
+spring:
+  sql:
+    init:
+      mode: never
+  datasource:
+    driver-class-name:  org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/curso_restful_api
+    username: postgres
+    password: postgres
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+      show-sql : false
+
+server:
+  port: 8080

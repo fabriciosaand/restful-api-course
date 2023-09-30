@@ -25,15 +25,16 @@ PUT http://localhost:8080/person
 Content-Type: application/json
 
 {
-  "firstName": "Fabricio",
-  "lastName": "Andrade",
-  "address": "Av. Alphaville, Alphaville I, Salvador - Bahia",
+  "id": 1,
+  "firstName": "Fabricio 2",
+  "lastName": "Andrade 2 ",
+  "address": "Av. Alphaville, Alphaville I, Salvador - Bahia - BR",
   "gender": "Male"
 }
 ###
 
 # Delete person
 
-DELETE  http://localhost:8080/person/1 
+DELETE  http://localhost:8080/person/1
 Content-Type: application/json
 ###
