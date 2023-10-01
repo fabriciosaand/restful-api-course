@@ -1,40 +1,42 @@
 # Find all peoples
-GET http://localhost:8080/person
-Content-Type: application/json
+GET http://localhost:8080/api/person/v1
+Content-Type: application/xml
+Accept: application/x-yaml
 ###
 
 # Find one person
-GET http://localhost:8080/person/1
+GET http://localhost:8080/api/person/v1/4
 Content-Type: application/json
+Accept: application/x-yaml
 ###
 
 # Create person
-POST http://localhost:8080/person
-Content-Type: application/json
+POST http://localhost:8080/api/person/v1
+Content-Type: application/x-yaml
+Accept: application/x-yaml
 
-{
-  "firstName": "Fabricio fsdf",
-  "lastName": "Andrade",
-  "address": "Av. Alphaville, Alphaville I, Salvador - Bahia",
-  "gender": "Male"
-}
+---
+first_name: "João"
+last_name: "Andrade"
+address: "Av. Alphaville, Alphaville I, Salvador - Bahia - BR"
+gender: "Male"
 ###
 
 # Update person
-PUT http://localhost:8080/person
-Content-Type: application/json
+PUT http://localhost:8080/api/person/v1
+Content-Type: application/x-yaml
+Accept: application/x-yaml
 
-{
-  "id": 1,
-  "firstName": "Fabricio 2",
-  "lastName": "Andrade 2 ",
-  "address": "Av. Alphaville, Alphaville I, Salvador - Bahia - BR",
-  "gender": "Male"
-}
+---
+id: 10
+first_name: "João II"
+last_name: "Andrade"
+address: "Av. Alphaville, Alphaville I, Salvador - Bahia - BR"
+gender: "Male"
 ###
 
 # Delete person
 
-DELETE  http://localhost:8080/person/1
+DELETE  http://localhost:8080/api/person/v1/5
 Content-Type: application/json
 ###
