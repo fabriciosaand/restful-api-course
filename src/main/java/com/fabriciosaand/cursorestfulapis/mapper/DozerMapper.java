@@ -3,14 +3,16 @@ package com.fabriciosaand.cursorestfulapis.mapper;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.modelmapper.ModelMapper;
+//import com.fasterxml.jackson.databind.cfg.MapperBuilder;
 
-/* import com.github.dozermapper.core.DozerBeanMapperBuilder;
-import com.github.dozermapper.core.Mapper; */
+//import org.modelmapper.ModelMapper;
+
+import com.github.dozermapper.core.DozerBeanMapperBuilder;
+import com.github.dozermapper.core.Mapper; 
 
 
 public class DozerMapper {
-    private static ModelMapper mapper = new ModelMapper();
+    private static Mapper mapper = DozerBeanMapperBuilder.buildDefault();
 
     public static <O, D> D parseObject(O origin, Class<D> destination){
         return mapper.map(origin, destination);
