@@ -7,7 +7,7 @@ Accept: application/x-yaml
 # Find one person
 GET http://localhost:8080/api/person/v1/4
 Content-Type: application/json
-Accept: application/x-yaml
+Accept: application/json
 ###
 
 # Create person
