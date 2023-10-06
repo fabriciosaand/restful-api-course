@@ -1,0 +1,42 @@
+# Find all peoples
+GET http://localhost:8080/api/book/v1
+Content-Type: application/xml
+Accept: application/x-yaml
+###
+
+# Find one book
+GET http://localhost:8080/api/book/v1/1
+Content-Type: application/json
+Accept: application/json
+###
+
+# Create book
+POST http://localhost:8080/api/book/v1
+Content-Type: application/x-yaml
+Accept: application/x-yaml
+
+---
+author: "Michael C. Feathers"
+launch_date: 1511974205878
+price: 49.0
+title: "Working effectively with legacy code 22"
+###
+
+# Update book
+PUT http://localhost:8080/api/book/v1
+Content-Type: application/x-yaml
+Accept: application/x-yaml
+
+---
+id: 16
+author: "Michael C. Feathers"
+launch_date: 1511974205878
+price: 49.0
+title: "Working effectively with legacy code 11"
+###
+
+# Delete book
+
+DELETE  http://localhost:8080/api/book/v1/16
+Content-Type: application/json
+###

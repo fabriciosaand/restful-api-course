@@ -1,3 +1,5 @@
+server:
+  port: 8888
 spring:
   sql:
     init:
@@ -5,8 +7,8 @@ spring:
   datasource:
     driver-class-name:  org.postgresql.Driver
     url: jdbc:postgresql://localhost:5432/curso_restful_api
-    username: postgres
-    password: postgres
+    # username: postgres
+    # password: postgres
 
   jpa:
     hibernate:
